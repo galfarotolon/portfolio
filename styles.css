@@ -26,7 +26,7 @@ body{
 @keyframes transitionInIntro{
     from {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(-25%);
     }
 
     to {
@@ -47,6 +47,8 @@ body{
   
 }
 
+
+/* Side Bar */
 .site-sidebar{
     position: fixed;
     background-color: rgba(145,13,13,.8);
@@ -111,16 +113,76 @@ body{
     font-weight: 300;
 }
 
-.content{
+.contact{
+    width: 50%;
+    padding-top: 40%;
+    text-align: center;
+}
+
+.contact h3{
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+}
+ 
+
+/* Intro */
+
+.intro{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
    margin-left: 25%;
     width: 75%;
-    height: 80vh;
+    height: 100vh;
 
 
     animation: transitionInIntro 1s;
   
+}
+
+.header{
+    font-size: 4rem;
+}
+
+.description{
+    margin: 0 15%;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+/* .intro-btn{
+
+    margin-top: 5%;
+    background: white;
+    padding: 2%;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(145,13,13,.8);
+    border: none;
+}
+
+.intro-btn:hover{
+    cursor: pointer;
+} */
+
+i{
+    color: rgba(145,13,13,.8);
+}
+
+.logo{
+    color: white;
+}
+
+.learn-more{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 10%;
 }

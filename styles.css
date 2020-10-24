@@ -2,20 +2,50 @@ body{
     box-sizing: border-box;
     margin: 0;
     font-family: 'roboto', sans-serif;
+
 }
+
+
+
+
+/* transitions  */
+
+@keyframes transitionInSideBar{
+    from {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes transitionInIntro{
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ------ */
 
 
 .main-container{
     
     display: flex;
     justify-content: space-between;
-    
+ 
     
   
 }
-
-
-
 
 .site-sidebar{
     position: fixed;
@@ -30,6 +60,8 @@ body{
     justify-content: flex-start;
     color: #fff;
 
+
+    animation: transitionInSideBar 1s;
    
    
 }
@@ -38,14 +70,14 @@ body{
     display: flex;
     margin: 5% 0;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
 
 }
 
 .language-options a {
    
     margin: 1%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -83,7 +115,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
    margin-left: 25%;
     width: 75%;
+    height: 80vh;
+
+
+    animation: transitionInIntro 1s;
   
 }

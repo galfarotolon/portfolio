@@ -127,7 +127,15 @@ body{
     display: flex;
     justify-content: space-around;
 }
- 
+
+
+/* Main content section */
+
+.main-content{
+    margin-left: 27%;
+    width: 75%;
+}
+
 
 /* Intro */
 
@@ -136,13 +144,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   margin-left: 25%;
-    width: 75%;
     height: 100vh;
-
-
-    animation: transitionInIntro 1s;
-  
+    animation: transitionInIntro 1s; 
 }
 
 .header{
@@ -155,23 +158,8 @@ body{
     line-height: 2;
 }
 
-/* .intro-btn{
 
-    margin-top: 5%;
-    background: white;
-    padding: 2%;
-    border-radius: 30px;
-    font-size: 1rem;
-    color: white;
-    background-color: rgba(145,13,13,.8);
-    border: none;
-}
-
-.intro-btn:hover{
-    cursor: pointer;
-} */
-
-i{
+.arrow{
     color: rgba(145,13,13,.8);
 }
 
@@ -184,5 +172,52 @@ i{
     display: flex;
     flex-direction: column;
     align-items: center;
-margin-top: 10%;
+    margin-top: 10%;
+}
+
+.learn-more h3{
+    font-size: 1.5rem;
+}
+
+/* Nav Bar */
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+background-color: rgba(104, 104, 104, 0.8);
+   
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    padding: 2% 5%;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+/* Sections */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 10%;
+   
+}
+
+.section h2{
+    text-align: center;
+}
+
+/* Skills section */
+
+#Skills{
+   
+  display: flex;
+ justify-content: center;
+   
 }

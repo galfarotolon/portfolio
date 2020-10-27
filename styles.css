@@ -126,6 +126,10 @@ body{
     justify-content: space-around;
 }
 
+.logo{
+    color: white;
+}
+
 
 /* Main content section */
 
@@ -147,7 +151,11 @@ body{
     height: 100vh;
     animation: transitionInIntro 1s; 
 
-
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images/technology-3243375_1920.jpg'); 
+    background-position: center;
+    /* background: #BBD2C5;  
+    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5); 
+    background: linear-gradient(to top, #292E49, #536976, #BBD2C5);  */
 }
 /* 
 video {
@@ -159,7 +167,7 @@ video {
   } */
 .header{
     font-size: 4rem;
-    color: black;
+    color: white;
     z-index: 1;
 }
 
@@ -167,7 +175,7 @@ video {
     margin: 0 15%;
     font-size: 1.3rem;
     line-height: 2;
-    color: black;
+    color: white;
 }
 
 
@@ -176,9 +184,7 @@ video {
     /* scroll-behavior: smooth; */
 }
 
-.logo{
-    color: white;
-}
+
 
 .learn-more{
  
@@ -186,6 +192,7 @@ video {
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
+    color: white;
 }
 
 .learn-more h3{

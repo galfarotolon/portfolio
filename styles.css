@@ -3,6 +3,7 @@ body{
     margin: 0;
     font-family: 'roboto', sans-serif;
 
+
 }
 
 
@@ -37,14 +38,11 @@ body{
 
 /* ------ */
 
-
 .main-container{
     
     display: flex;
     justify-content: space-between;
- 
-    
-  
+
 }
 
 
@@ -55,14 +53,11 @@ body{
     min-height: 100vh;
     width: 25%;
     padding: 1rem;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     color: #fff;
-
-
     animation: transitionInSideBar 1s;
    
    
@@ -90,7 +85,8 @@ body{
     
 }
 
-.avatar-img{
+
+.avatar-img a{
     display: flex;
     justify-content: center;
 }
@@ -102,6 +98,7 @@ body{
 
 .name-role{
     align-items: center;
+
 }
 
 .name{
@@ -111,6 +108,7 @@ body{
 
 .role{
     font-weight: 300;
+
 }
 
 .contact{
@@ -134,6 +132,8 @@ body{
 .main-content{
     margin-left: 27%;
     width: 75%;
+
+
 }
 
 
@@ -146,21 +146,34 @@ body{
     justify-content: center;
     height: 100vh;
     animation: transitionInIntro 1s; 
-}
 
+
+}
+/* 
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  } */
 .header{
     font-size: 4rem;
+    color: black;
+    z-index: 1;
 }
 
 .description{
     margin: 0 15%;
     font-size: 1.3rem;
     line-height: 2;
+    color: black;
 }
 
 
 .arrow{
     color: rgba(145,13,13,.8);
+    /* scroll-behavior: smooth; */
 }
 
 .logo{
@@ -179,6 +192,11 @@ body{
     font-size: 1.5rem;
 }
 
+.content{
+
+}
+
+
 /* Nav Bar */
 
 .nav-bar{
@@ -186,7 +204,7 @@ body{
     justify-content: center;
     width: 90%;
     margin: 0 auto;
-background-color: rgba(104, 104, 104, 0.8);
+    background-color: rgba(104, 104, 104, 0.8);
    
 }
 
@@ -198,6 +216,16 @@ background-color: rgba(104, 104, 104, 0.8);
     font-weight: 800;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-top: 5px;
+  
+}
+
+
+
 
 /* Sections */
 
@@ -206,7 +234,7 @@ background-color: rgba(104, 104, 104, 0.8);
     flex-direction: column;
     justify-content: center;
     margin: 5% 10%;
-   
+    height: 100vh;  
 }
 
 .section h2{

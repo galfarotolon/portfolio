@@ -111,14 +111,14 @@ body{
 
 }
 
-.contact{
+.contact, .cv{
     width: 50%;
-    padding-top: 40%;
+    padding-top: 10%;
     text-align: center;
 }
 
-.contact h3{
-    font-size: 1.5rem;
+.contact h3, .cv h3{
+    font-size: 1.3rem;
 }
 
 .contact-links {
@@ -333,9 +333,13 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
     grid-template-columns: 100px 50px 100px;
     grid-template-rows: 80px auto 80px; 
-    column-gap: 70px;
-    row-gap: 15px;   
+    column-gap: 85px;
+    row-gap: 30px;   
    
+}
+
+.project{
+ 
 }
 
 .project a{
@@ -346,16 +350,40 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 .project img{
     width: 400px;
+    height: 250px;
 }
 
 .project{
     width: 45%;
 }
 
+.project p{
+    line-height: 1.5;
+    color: #4f4f4f;
+    text-align: center;
+}
+
 .project-icons{
-    display: flex;
+   text-align: center;
+
 }
 
 .project-logo{
     color: black;
+}
+
+
+
+/* CONTACT FORM */
+
+
+
+
+/* Footer */
+
+footer{
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+    padding-bottom: 2%;
 }

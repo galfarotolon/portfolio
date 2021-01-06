@@ -254,5 +254,65 @@ video {
    
   display: flex;
  justify-content: center;
+
+
    
+}
+
+#Skills h2{
+    margin-top: 5%;
+}
+
+.html-icon{
+    color: orange;
+}
+
+.css-icon{
+    color: blue;
+}
+
+.js-icon{
+    color: #f0db4f;
+
+}
+
+.react-icon{
+    color: #61DBFB;
+}
+
+.node-icon{
+    color: #44883e;
+}
+
+.db-icon{
+    color: grey;
+}
+
+.skills-container{
+    display: flex; 
+    flex-wrap: wrap;
+
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 20px;
+    row-gap: 15px;   
+   
+}
+
+
+.skill{
+    width: 30%;
+}
+
+
+
+
+@media(max-width:900px){
+    .skill{
+        width: 100%;
+    }
+
+    .skills-container{
+        flex-direction: column;
+    }
 }

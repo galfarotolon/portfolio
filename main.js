@@ -40,6 +40,7 @@ $('.learn-more a').on('click', function (e) {
 
 
 $('#intro').mousewheel(function (e) {
+    console.log(e)
 
     if (e.deltaY === -1) {
         $('html, body').animate({
@@ -58,6 +59,7 @@ $('.nav-bar').mousewheel(function (e) {
         }, 800)
 
     }
-
 })
+
+
 

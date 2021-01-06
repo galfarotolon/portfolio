@@ -252,8 +252,10 @@ video {
 
 #Skills{
    
-  display: flex;
- justify-content: center;
+  /* display: flex;
+ justify-content: center; */
+
+ padding-top: 12%;
 
 
    
@@ -261,14 +263,16 @@ video {
 
 #Skills h2{
     margin-top: 5%;
+
 }
 
 .html-icon{
-    color: orange;
+    color: #f06529;
 }
 
 .css-icon{
-    color: blue;
+    color: #264de4;
+
 }
 
 .js-icon{
@@ -286,6 +290,10 @@ video {
 
 .db-icon{
     color: grey;
+}
+
+.py-icon{
+    color:#4B8BBE;
 }
 
 .skills-container{

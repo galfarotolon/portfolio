@@ -153,18 +153,9 @@ body{
 
 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images/technology-3243375_1920.jpg'); 
     background-position: center;
-    /* background: #BBD2C5;  
-    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5); 
-    background: linear-gradient(to top, #292E49, #536976, #BBD2C5);  */
+
 }
-/* 
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  } */
+
 .header{
     font-size: 4rem;
     color: white;
@@ -241,7 +232,7 @@ video {
     flex-direction: column;
     justify-content: center;
     margin: 5% 10%;
-    height: 100vh;  
+   
 }
 
 .section h2{
@@ -250,18 +241,18 @@ video {
 
 /* Skills section */
 
-#Skills{
+#Skills, #Projects{
    
   /* display: flex;
  justify-content: center; */
 
- padding-top: 12%;
+ padding-top: 10%;
 
 
    
 }
 
-#Skills h2{
+#Skills{
     margin-top: 5%;
 
 }
@@ -323,4 +314,48 @@ video {
     .skills-container{
         flex-direction: column;
     }
+}
+
+
+/* projects */
+
+
+
+.project-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.projects-container{
+    display: flex; 
+    flex-wrap: wrap;
+
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 70px;
+    row-gap: 15px;   
+   
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.project img{
+    width: 400px;
+}
+
+.project{
+    width: 45%;
+}
+
+.project-icons{
+    display: flex;
+}
+
+.project-logo{
+    color: black;
 }

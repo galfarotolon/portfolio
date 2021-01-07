@@ -45,6 +45,17 @@ p{
 
 }
 
+
+@media(max-width:568px){
+    p{
+        
+        text-align: justify;
+       
+    }
+
+ 
+}
+
 .main-content h2{
     font-size: 2rem;
     font-weight: 900;
@@ -78,7 +89,7 @@ p{
 }
 
 
-@media(max-width:900px){
+@media(max-width:1278px){
     .site-sidebar{
         display: none;
     }
@@ -168,7 +179,7 @@ p{
 }
 
 
-@media(max-width:900px){
+@media(max-width:1278px){
     .main-content{
         width: 100%;
         margin-left: 0;
@@ -233,7 +244,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 }
 
 
-@media(max-width:900px){
+@media(max-width:1278px){
 
         .arrow{
             display: none;
@@ -260,9 +271,13 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     font-size: 1.5rem;
 }
 
-.content{
-
+@media(max-width:568px){
+    .learn-more h3{
+        font-size: 1.2rem;
+    }
 }
+
+
 
 
 /* Nav Bar */
@@ -298,8 +313,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 }
 
 
-
-@media(max-width:900px){
+ @media(max-width:1278px){
     .site-sidebar{
         display: none;
     }
@@ -311,7 +325,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 
  
-}
+} 
 
 
 
@@ -385,18 +399,32 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     grid-template-rows: 80px auto 80px; 
     column-gap: 31px;
     row-gap: 15px;   
+
+   
+        justify-content: space-between;
+  
+
+   
    
 }
 
 
 .skill{
-    width: 31%;
+    width: 30%;
+}
+
+@media(max-width:1278px){
+    .skill{
+        width: 45%;
+    }
+
+
 }
 
 
 
 
-@media(max-width:900px){
+@media(max-width:656px){
     .skill{
         width: 100%;
     }
@@ -405,6 +433,9 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
         flex-direction: column;
     }
 }
+
+
+
 
 
 /* projects */
@@ -428,14 +459,13 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
     grid-template-columns: 100px 50px 100px;
     grid-template-rows: 80px auto 80px; 
-    column-gap: 85px;
+    column-gap: 10px;
     row-gap: 30px;   
+
+    justify-content: space-around;
    
 }
 
-.project{
- 
-}
 
 .project a{
     text-decoration: none;
@@ -445,12 +475,12 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 
 .project img{
-    width: 400px;
+    width: 100%;
     height: 250px;
 }
 
 .project{
-    width: 45%;
+    width: 48%;
 }
 
 .project p{
@@ -473,25 +503,57 @@ color:rgba(143, 8, 8, 0.6)
 }
 
 
-@media(max-width:900px){
-    .project{
-        width: 100%;
-        text-align: center;
-    }
+@media(max-width:1278px){
 
     .projects-container{
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+    .project{
+        width: 45%;
+        
+    }
+
+    .project img{
+        width: 100%;
+        height: 200px;
+    }
+
+
+ 
+}
+
+
+@media(max-width:768px){
+
+    .projects-container{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project{
+        width: 100%;
+        
+    }
+
+    .project img{
+        width: 100%;
+        height: 300px;
+    }
+
 
  
 }
 
 
 
-@media(max-width:700px){
+
+
+@media(max-width:568px){
     .project{
         width: 100%;
-        text-align: center;
+        
     }
 
     .projects-container{
@@ -500,8 +562,14 @@ color:rgba(143, 8, 8, 0.6)
 
     .project img{
         width: 100%;
-        height: 150px;
+        height: 200px;
     }
+
+    .project p{
+        text-align: justify;
+    }
+    
+    
 
  
 }
@@ -526,6 +594,9 @@ color:rgba(143, 8, 8, 0.6)
 }
 
 
+
+
+
 /* Footer */
 
 footer{
@@ -535,3 +606,14 @@ footer{
     padding-bottom: 2%;
 }
 
+
+
+@media(max-width:568px){
+    footer{
+        
+      
+        margin-bottom: 5%;
+    }
+
+ 
+}

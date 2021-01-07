@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: 'roboto', sans-serif;
 
 
@@ -71,10 +72,10 @@ p{
 }
 
 
-/* Side Bar */
+/* Side Bar rgba(145,13,13,.8); */
 .site-sidebar{
     position: fixed;
-    background-color: rgba(145,13,13,.8);
+    background-color: rgb(221, 59, 59);
     min-height: 100vh;
     width: 25%;
     padding: 1rem;
@@ -239,7 +240,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 
 .arrow{
-    color: rgba(145,13,13,.8);
+    color:rgb(221, 59, 59);
     /* scroll-behavior: smooth; */
 }
 
@@ -293,6 +294,9 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
    
 }
 
+
+
+
 .nav-bar a{
     text-decoration: none;
     color: white;
@@ -303,6 +307,67 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
    
   
 }
+
+
+
+
+/* Collapsed navbar  */
+
+.navbar-collapse{
+    display: flex;
+    width: 100%;
+    background-color: rgb(221, 59, 59);
+    position: fixed;
+    top: 0;
+}
+
+
+
+
+.navbar-collapse a{
+    width: 10%;
+    border-radius: 50%;
+}
+
+
+.navbar-collapse img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.collapse-links{
+    width: 80%;
+   
+   
+}
+
+.collapse-links ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.collapse-links ul li{
+    padding: 3%;
+    list-style: none;
+  
+}
+
+.collapse-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.toggle-collapse{
+    width: 10%;
+    height: 45px;
+}
+
+/* ********************* */
+
+
 
 .sticky {
   position: sticky;
@@ -327,6 +392,15 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
  
 } 
 
+
+@media(min-width:1278px){
+  
+    .nav-bar-collapse{
+        display: none;
+    }
+
+ 
+} 
 
 
 /* Sections */

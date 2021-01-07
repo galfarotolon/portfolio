@@ -61,5 +61,23 @@ $('.nav-bar').mousewheel(function (e) {
     }
 })
 
+// for small nav bar
+
+// jQuery(document).ready(function ($) {
+//     var alterClass = function () {
+//         var ww = document.body.clientWidth;
+//         if (ww <= 1278) {
+//             $('.nav-bar').addClass('nav-bar-collapse');
+//         } else if (ww >= 1279) {
+//             $('.nav-bar').removeClass('nav-bar-collapse');
+
+//         };
+//     };
+//     $(window).resize(function () {
+//         alterClass();
+//     });
+//     //Fire it when the page first loads:
+//     alterClass();
+// });
 
 

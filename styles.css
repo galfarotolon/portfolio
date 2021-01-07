@@ -38,6 +38,20 @@ body{
 
 /* ------ */
 
+p{
+    
+    line-height: 1.5;
+    color: #4f4f4f;
+
+}
+
+.main-content h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #4f4f4f;
+    border-bottom: 1px solid #4f4f4f;
+}
+
 .main-container{
     
     display: flex;
@@ -156,10 +170,11 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 }
 
-.header{
+#header{
     font-size: 4rem;
     color: white;
-    z-index: 1;
+    border-bottom: none;
+   
 }
 
 .description{
@@ -200,18 +215,23 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 .nav-bar{
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 1);
+    height: 50px;
+  
    
 }
 
 .nav-bar a{
     text-decoration: none;
     color: white;
-    padding: 2% 5%;
-    font-size: 1.5rem;
+    padding: 1.5% 5%;
+    font-size: 1.3rem;
     font-weight: 800;
+    text-align: center;
+   
+  
 }
 
 .sticky {
@@ -241,12 +261,12 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 /* Skills section */
 
-#Skills, #Projects{
+#Skills, #Projects, #About{
    
   /* display: flex;
  justify-content: center; */
 
- padding-top: 10%;
+ padding-top: 8.5%;
 
 
    
@@ -293,14 +313,14 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
     grid-template-columns: 100px 50px 100px;
     grid-template-rows: 80px auto 80px; 
-    column-gap: 20px;
+    column-gap: 31px;
     row-gap: 15px;   
    
 }
 
 
 .skill{
-    width: 30%;
+    width: 31%;
 }
 
 
@@ -323,7 +343,12 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 .project-link{
     text-decoration: none;
-    color: black;
+    color:rgba(143, 8, 8, 0.8)
+}
+
+.project-link:hover{
+    color:rgba(143, 8, 8, 0.6)
+
 }
 
 
@@ -345,6 +370,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 .project a{
     text-decoration: none;
     color: black;
+    
 }
 
 
@@ -358,8 +384,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 }
 
 .project p{
-    line-height: 1.5;
-    color: #4f4f4f;
+   
     text-align: center;
 }
 
@@ -369,7 +394,12 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 }
 
 .project-logo{
-    color: black;
+    color:rgba(143, 8, 8, 0.8)
+}
+
+.project-logo:hover{
+
+color:rgba(143, 8, 8, 0.6)
 }
 
 
@@ -377,6 +407,19 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 /* CONTACT FORM */
 
 
+/* ABOUT */
+
+
+#About a{
+    text-decoration: none;
+    color:rgba(143, 8, 8, 0.8)
+}
+
+
+#About a:hover{
+    text-decoration: none;
+    color:rgba(143, 8, 8, 0.6)
+}
 
 
 /* Footer */
@@ -387,3 +430,4 @@ footer{
     text-align: center;
     padding-bottom: 2%;
 }
+

@@ -61,23 +61,14 @@ $('.nav-bar').mousewheel(function (e) {
     }
 })
 
-// for small nav bar
+// for collapse button
 
-// jQuery(document).ready(function ($) {
-//     var alterClass = function () {
-//         var ww = document.body.clientWidth;
-//         if (ww <= 1278) {
-//             $('.nav-bar').addClass('nav-bar-collapse');
-//         } else if (ww >= 1279) {
-//             $('.nav-bar').removeClass('nav-bar-collapse');
+$(document).ready(function () {
+    $('.toggle-collapse').click(function () {
+        $('.navbar-collapse').toggleClass('expand')
+        $('.collapse-links ul').toggleClass('a-block')
 
-//         };
-//     };
-//     $(window).resize(function () {
-//         alterClass();
-//     });
-//     //Fire it when the page first loads:
-//     alterClass();
-// });
+    })
+})
 
 

@@ -1,10 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'roboto', sans-serif;
-
-
 }
 
 
@@ -48,13 +51,9 @@ p{
 
 
 @media(max-width:568px){
-    p{
-        
-        text-align: justify;
-       
+    p{   
+        text-align: justify; 
     }
-
- 
 }
 
 .main-content h2{
@@ -72,7 +71,7 @@ p{
 }
 
 
-/* Side Bar rgba(145,13,13,.8); */
+/* Side Bar */
 .site-sidebar{
     position: fixed;
     background-color: rgb(221, 59, 59);
@@ -94,12 +93,6 @@ p{
     .site-sidebar{
         display: none;
     }
-
-
-
-
-
- 
 }
 
 .language-options{
@@ -107,7 +100,6 @@ p{
     margin: 5% 0;
     justify-content: space-between;
     width: 50%;
-
 }
 
 .language-options a {
@@ -132,12 +124,10 @@ p{
 .avatar-img img{
     width: 60%;
     border-radius: 50%;
- 
 }
 
 .name-role{
     align-items: center;
-
 }
 
 .name{
@@ -147,7 +137,6 @@ p{
 
 .role{
     font-weight: 300;
-
 }
 
 .contact, .cv{
@@ -175,8 +164,6 @@ p{
 .main-content{
     margin-left: 27%;
     width: 75%;
-
-
 }
 
 
@@ -188,11 +175,8 @@ p{
 
     .intro h2{
         font-size: 1rem;
-        text-align: center;
-        
+        text-align: center;  
     }
-
-
     
 #Skills, #Projects, #About{
    
@@ -200,13 +184,12 @@ p{
    justify-content: center; */
   
    padding-top: 100%;
-  
-  
      
   }
 
- 
 }
+
+
 
 
 /* Intro */
@@ -216,7 +199,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     animation: transitionInIntro 1s; 
 
 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images/technology-3243375_1920.jpg'); 
@@ -250,11 +233,17 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
         .arrow{
             display: none;
         }
-    
-
-
-
  
+}
+
+
+
+@media(max-width:568px){
+
+    #header{
+        font-size: 2.5rem;
+    }
+
 }
 
 
@@ -290,8 +279,6 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 1);
     height: 50px;
-  
-   
 }
 
 
@@ -305,7 +292,6 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     font-weight: 800;
     text-align: center;
    
-  
 }
 
 
@@ -319,6 +305,9 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     background-color: rgb(221, 59, 59);
     position: fixed;
     top: 0;
+    align-items: center;
+    ;
+  
 }
 
 
@@ -327,17 +316,21 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 .navbar-collapse a{
     width: 10%;
     border-radius: 50%;
+    margin-left: 1%;
+    padding-top: 1%;
 }
 
 
 .navbar-collapse img{
-    width: 100%;
+    width: 85%;
     border-radius: 50%;
+
 }
 
 
 .collapse-links{
-    width: 80%;
+    width: 70%;
+
    
    
 }
@@ -345,25 +338,137 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 .collapse-links ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  
 }
 
 .collapse-links ul li{
-    padding: 3%;
+    padding: 2%;
     list-style: none;
-  
+    width: 100%;
 }
 
 .collapse-links ul li a{
     color: white;
     text-decoration: none;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 800;
+  
+}
+
+
+@media(max-width:568px){
+    .collapse-links ul li a{
+        font-size: 1rem;
+    }
+
+    .collapse-links .nav-item {
+        justify-content: space-between;
+    }
+
+
+    .navbar-collapse img{
+        width: 100%;
+        border-radius: 50%;
+    
+    }
+    
+}
+
+
+
+.collapse-links ul li a:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    transition: 0.5s ease;
+
+  
 }
 
 
 
 .toggle-collapse{
-    width: 10%;
+    width: 45px;
     height: 45px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
 }
+
+
+.toggle-collapse:hover{
+    /* background-color: rgb(179, 49, 49); */
+    background-color: white;;
+    color: rgb(221, 59, 59);
+}
+
+
+.expand{
+    height: 20vh;
+}
+
+.expand-logos{
+  width: 30%;
+ 
+}
+
+
+.expand-logos ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.expand-logos ul li{
+    padding: 2%;
+    list-style: none;
+    width: 100%;
+}
+
+.expand-logos ul li a{
+    color: white;
+    text-decoration: none;
+    border-radius: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+
+}
+
+
+.expand-logos ul li a:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    transition: 0.5s ease;
+
+}
+
+
+@media(max-width:820px){
+    .logo{
+       font-size: 1.5em;
+    }
+}
+
+
+@media(max-width:568px){
+    .logo{
+       font-size: 1em;
+    }
+
+    .expand-logos ul{
+        padding: 10%;
+    }
+}
+
+
 
 /* ********************* */
 
@@ -386,20 +491,15 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     .nav-bar{
         display: none;
     }
-
-
-
  
 } 
 
 
 @media(min-width:1278px){
   
-    .nav-bar-collapse{
+    .navbar-collapse{
         display: none;
     }
-
- 
 } 
 
 
@@ -409,8 +509,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5% 10%;
-   
+    margin: 5% 10%; 
 }
 
 .section h2{
@@ -420,13 +519,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 /* Skills section */
 
 #Skills, #Projects, #About{
-   
-  /* display: flex;
- justify-content: center; */
 
  padding-top: 8.5%;
-
-
    
 }
 
@@ -473,13 +567,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     grid-template-rows: 80px auto 80px; 
     column-gap: 31px;
     row-gap: 15px;   
-
-   
-        justify-content: space-between;
-  
-
-   
-   
+    justify-content: space-between;
+ 
 }
 
 
@@ -491,7 +580,6 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     .skill{
         width: 45%;
     }
-
 
 }
 
@@ -507,9 +595,6 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
         flex-direction: column;
     }
 }
-
-
-
 
 
 /* projects */
@@ -534,8 +619,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
     grid-template-columns: 100px 50px 100px;
     grid-template-rows: 80px auto 80px; 
     column-gap: 10px;
-    row-gap: 30px;   
-
+    row-gap: 30px;  
     justify-content: space-around;
    
 }
@@ -550,7 +634,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images
 
 .project img{
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 5px;
 }
 
@@ -586,12 +670,9 @@ color:rgba(143, 8, 8, 0.6)
 
     .project img{
         width: 80%;
-        height: 300px;
-        
+        height: 300px;     
     }
 
-
- 
 }
 
 
@@ -611,9 +692,6 @@ color:rgba(143, 8, 8, 0.6)
         width: 100%;
         height: 200px;
     }
-
-
- 
 }
 
 
@@ -633,9 +711,6 @@ color:rgba(143, 8, 8, 0.6)
         width: 100%;
         height: 300px;
     }
-
-
- 
 }
 
 
@@ -660,9 +735,6 @@ color:rgba(143, 8, 8, 0.6)
     .project p{
         text-align: justify;
     }
-    
-    
-
  
 }
 
@@ -706,6 +778,4 @@ footer{
       
         margin-bottom: 5%;
     }
-
- 
 }

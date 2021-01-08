@@ -12,7 +12,7 @@ function myFunction() {
 }
 
 
-$('.nav-bar a, .avatar-img a').on('click', function (e) {
+$('.nav-bar a, .avatar-img a, .nav-item a, .navbar-collapse a').on('click', function (e) {
     if (this.hash !== '') {
         e.preventDefault();
 
@@ -26,13 +26,26 @@ $('.nav-bar a, .avatar-img a').on('click', function (e) {
 })
 
 // for smoother grabbing of nav bar to keep scrolling down
-$('.learn-more a').on('click', function (e) {
+$('.arrow-main').on('click', function (e) {
     if (this.hash !== '') {
         e.preventDefault();
 
         const hash = this.hash;
         $('html, body').animate({
             scrollTop: $(hash).offset().top + 110
+        }, 800)
+    }
+})
+
+
+// for arrow in smaller window sizes
+$('.arrow-second').on('click', function (e) {
+    if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
         }, 800)
     }
 })

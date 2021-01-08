@@ -8,35 +8,347 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+        <script src="https://kit.fontawesome.com/1f1f46fe01.js" crossorigin="anonymous"></script>
     </head>
+    <body>
+        <div class='main-container'>
+            <div class='site-sidebar'>
+                <div class='language-options'>
 
+           
 
+                    <a href='index.html' language='english'class='active'>English</a>
+                    <a href='#' language='spanish'>Español</a>
 
-<body>
-    <div class='main-container'>
+                   
+                </div>
+                <div class='avatar-img'>
+                    <a href='#intro'><img src='images/Screenshot_3.png'></a>
+                </div>
+                <div class='name-role'>
+                    <h1 class='name'>Guillermo Alfaro</h1>
+                    <h2 class='role'>Full Stack Software Developer</h2>
+                </div>
 
-        <div class='site-sidebar'>
-            <div class='language-options'>
-                <a href='index.html' language='english'class='active'>EN</a>
-                <a href='#' language='spanish'>ESP</a>
+                <div class='cv'>
+                    <h3>CV/Resume</h3>
+                    <a href='https://docs.google.com/document/d/1-R_XISy7JytR3cvx5UzjpyIBqgfrIaYvtu5fM3t1dMg/edit?usp=sharing' target='_blank'><i class="fas fa-file-alt fa-2x logo"></i></a>
+                </div>
+
+                <div class='contact'>
+                    <h3>Contact Me</h3>
+                    <div class='contact-links'>
+                        <a href='https://www.linkedin.com/in/guillermo-alfaro/' target='_blank'><i class="fab fa-linkedin fa-2x logo"></i></a>
+                        <a href='https://github.com/galfarotolon' target='_blank'><i class="fab fa-github fa-2x logo"></i></a>
+                        <a rel="me" href="mailto:galfarotolon@gmail.com" title="mail: galfarotolon@gmail.com"> <i class="fa fa-envelope fa-2x logo"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class='avatar-img'>
-                <img src='images/Screenshot_3.png'>
-            </div>
-            <h1>Guillermo Alfaro</h1>
-            <h2>Full Stack Software Developer</h2>
             
-          
-        </div>
-        
- 
+    
+            <div class='main-content'>
 
-        <div class='content'>
-            <h2 class='title'>Hola mundo</h2>
-            <p class='description'>Hola, bienvenidos a mi portafolio</p>
+
+            <div class='navbar-collapse'>
+                       
+                      
+                            <a href='#intro'><img src='images/Screenshot_3.png'></a>
+                    
+
+                       <div class='collapse-links'>
+                            <ul>
+                                <li class='nav-item'>  <a href='#Skills'>Skills</a></li>
+                                 <li class='nav-item'>  <a href='#Projects'>Projects</a></li>
+                                  <li class='nav-item'>  <a href='#About'>About</a></li>
+
+                            </ul>
+
+                        </div>
+
+                            <div class='expand-logos'>
+                                <ul>
+                                    <li class='expand-links'><a href='https://www.linkedin.com/in/guillermo-alfaro/' target='_blank'><i class="fab fa-linkedin fa-lg logo"></i></a></li>
+                                    <li class='expand-links'><a href='https://github.com/galfarotolon' target='_blank'><i class="fab fa-github fa-lg logo"></i></a></li>
+                                    <li class='expand-links'><a rel="me" href="mailto:galfarotolon@gmail.com" title="mail: galfarotolon@gmail.com"> <i class="fa fa-envelope fa-lg logo"></i></a></li>
+                                    <li class='expand-links'>  <a href='https://docs.google.com/document/d/1-R_XISy7JytR3cvx5UzjpyIBqgfrIaYvtu5fM3t1dMg/edit?usp=sharing' target='_blank'><i class="fas fa-file-alt fa-lg logo"></i></a></li>
+                                </ul>
+                           </div>
+
+                       
+
+                       <!--  
+                           <button class='toggle-collapse'>
+                        
+                            <i class="fas fa-bars"></i>
+                        </button> 
+                        --> 
+
+                        
+                        
+                   
+                        
+                    </div> 
+               
+                <div id='intro' class='intro'>
+
+
+
+                    
+         
+                    <h2 id='header'>Hello, I'm Guillermo</h2>
+                    <p class='description'>I am a Full Stack Software Developer currently looking for opportunities to learn and grow.
+                    I am available for freelance work. I'm also looking for a position appropriate for someone beginning their career in Technology.</p> 
+
+                    <div class='learn-more'>
+                        <h3>Learn More About My Skills and Projects</h3>
+                        <a href='#NavBar'><i class="fas fa-arrow-circle-down fa-5x arrow"></i></a>
+                    </div>
+
+                </div>
+
+     <div class='content'>
+                <div id='NavBar'>
+                    <div class='nav-bar'>
+                        <a href='#Skills'>Skills</a>
+                        <a href='#Projects'>Projects</a>
+                        <a href='#About'>About Me</a>
+                        <!-- <a href='#Contact'>Contact</a>-->
+                    </div> 
+                </div>
+
+                <div id='Skills' class='section'>
+                    <h2 >Skills</h2>
+
+                    <div class='skills-container'>
+                        <div class='skill'>
+                            <i class="fab fa-html5 fa-3x html-icon"></i>
+                            <h3>HTML</h3>
+                            <p>This is the bread and butter of any web developer. I use this in all of my projects in one way or another.
+                        It works very well when building static web pages such as this one. </p>
+                        </div> 
+
+                        <div class='skill'>
+                            <i class="fab fa-css3-alt fa-3x css-icon"></i>
+                            <h3>CSS</h3>
+                            <p>CSS is core at bringing style to any web page or application. I use CSS to style all my projects, including
+                            key frames, media queries, variables, and animations. I also love Flexbox!</p>
+                        </div>     
+                     
+                        <div class='skill'>
+                            <i class="fab fa-js-square js-icon fa-3x"></i>
+                            <h3>Vanilla JavaScript</h3>
+                            <p>JavaScript is an incredibly powerful language used in today's browsers. In tandem with HTML and CSS, they 
+                            make most of the web pages and applications used today. </p>
+                        </div>   
+
+                        
+                        <div class='skill'>
+                            <i class="fab fa-react react-icon fa-3x"></i>
+                            <h3>React</h3>
+                            <p>React is my favorite JavaScript library. I use this tool for dynamic single-page applications. The way React uses
+                            reusable components comes in very handy. Depending on the size of the project I'm working on,
+                            I'll handle state differently. My regular go-to is regular prop usage or Context API. I'm currently learning Redux
+                            for bigger applications. </p>
+                        </div>  
+
+                          <div class='skill'>
+                            <i class="fab fa-node-js node-icon fa-3x"></i>
+
+                           
+                            <h3>Node.js</h3>
+                            <p>I use Node for building the server-side portion of my projects. Node is great because it allows JavaScript to be used
+                            outside the browser, in the command line, and interact with the back end using only one programming language.
+                            I always pair this with the Express.js framework to create robust back-end architecture and APIs. </p>
+                        </div> 
+
+
+                        <div class='skill'>
+                            <i class="fas fa-database db-icon fa-3x"></i>
+
+                            <h3>Databases</h3>
+                            <p>I normally use MongoDB paired with Mongoose and Atlas as a management tool in NoSQL projects where performance
+                             is key. This is my go-to to build MERN full-stack applications. Otherwise, I use SQLite3 with Knex and SQLite 
+                             Studio as a management tool for SQL/RDBM applications.
+                            </p>
+                        </div> 
+
+
+                          <div class='skill'>
+                            <i class="fab fa-python py-icon fa-3x"></i>
+
+                            <h3>Python</h3>
+                            <p>I know the basics of Python and have used it while I was learning the fundamentals of Computer Science. It is a 
+                            strong and intuitive language that I mostly use to solve coding challenges and other complex problems.
+                            </p>
+                        </div> 
+
+               
+                    </div>
+
+                </div>
+
+
+
+                  <div id='Projects' class='section'>
+
+                    <h2>Featured Projects</h2>
+
+                      <p> Below are some of my projects. I'm constantly building new applications and websites. All my work is on my GitHub
+                        page. Click <a class='project-link' href='https://github.com/galfarotolon?tab=repositories' target='_blank'><strong>here</strong></a> 
+                        to access all my repositories.
+                        </p>
+
+                    <div class='projects-container'>
+                        <div class='project'>
+                            <a href='https://e-store-ga.herokuapp.com/' target='_blank'>
+                                <h3>E-Store</h3>
+                                <img src='images/e-commerce-img.png'/>
+                            </a>
+                            <p>
+                                A project using the MERN stack. The user can create an account and add items to the cart. Checkout is easy 
+                                and uses the PayPal SDK. If logged in as an admin, CRUD operations available to add new items to the Store
+                                and mark items as delivered. There is also a separate tab for admins to check order status and more features.
+                            </p>
+                            <div class='project-icons'>
+                            <a href='https://github.com/galfarotolon/e-commerce' target='_blank'><i class="fab fa-github fa-2x project-logo"></i></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class='project'>
+                            <a href='https://react-beach-resort-ga.netlify.app/' target='_blank'>
+                                <h3>Beach Resort</h3>
+                                <img src='images/beach-resort-img.png'/>
+                            </a>
+                            <p>
+                                A Beach Resort website. It uses Context API for state management. It has a reponsive design using
+                                media queries in CSS and a filtering system in real time using several JavaScript array methods. It has reusable
+                                React components such as the header and footer and uses Contentful to access the room data. 
+                            </p>
+                          
+                            <div class='project-icons'>
+                                <a href='https://github.com/galfarotolon/Beach-Resort' target='_blank'><i class="fab fa-github fa-2x project-logo"></i></a>
+                            </div>
+
+                        </div>
+
+                        
+                        <div class='project'>
+                             <a href='https://voice-news-app.galfarotolon.vercel.app/' target='_blank'> 
+                         
+                                <h3>News Hub</h3>
+                                <img src='images/news-hub-img.png'/>
+                                </a> 
+                            <p>
+                                News Hub is a news aggregator application that is controlled by voice commands using the Alan AI software. 
+                                The AI will proceed to search for news depending on several voice commands it has been programmed to work with. 
+                                It also reads article headlines and opens articles in a new tab when instructed to do so. Styling made with 
+                                Material UI. 
+                            </p>
+                          
+                            <div class='project-icons'>
+                                <a href='https://github.com/galfarotolon/voice-news-app' target='_blank'><i class="fab fa-github fa-2x project-logo"></i></a>
+                            </div>
+
+                        </div>
+
+
+                          <div class='project'>
+                            <a href='https://game-of-life-steel.vercel.app/' target='_blank'>
+                                <h3>Game of Life</h3>
+                                <img src='images/game-of-life-img.png'/>
+                            </a>
+                            <p>
+                                This is my take on Conway's Game of Life. The player can interact with the grid by clicking on it and
+                                new cells will be created. The player can also pre-load existing patterns and pause/reset/change game speed
+                                and grid size. There are also 'controls', 'rules', and 'about the  game' sections. These are 
+                                displayed using modals and styling from reactstrap. 
+                            </p>
+                          
+                            <div class='project-icons'>
+                                <a href='https://github.com/galfarotolon/game-of-life' target='_blank'><i class="fab fa-github fa-2x project-logo"></i></a>
+                            </div>
+
+                        </div>
+                      
+
+
+
+                    </div>
+                </div>
+
+
+
+                 <div id='About' class='section'>
+                    <h2>About</h2>
+                        <h3>Hello!</h3>
+                        <p>
+                        I have recently shifted careers from Business to Software Development. My journey began approximately 9 months ago
+                        when I joined Lambda School's <a href='https://lambdaschool.com/courses/full-stack-web-development' target='_blank'><strong>Full Stack Web 
+                        Development</strong></a> Program.
+                        The program is a 9-month fully-remote 
+                        immersive program that is designed to teach students from their first line of code to succesfully creating full stack applications. I finished
+                        a few months ago and am currently job hunting. 
+                        
+
+                          </p>
+
+                        <p> 
+                            I have worked extensively in teams and have succesfully overcome all the challenges thrown at me. I constantly practice 
+                            coding challenges in JavaScript and Python to keep my skills sharp, but what I feel most passionate about is to 
+                            create intuitive and interactive web applications that are fun and easy to use by everyone. 
+
+                        </p>
+
+                        <p>
+
+                            I'm constantly learning new tools and technologies to become a better Software Developer. One of my most recent 
+                            projects is a MERN E-Commerce application made with Redux, which I'm still learning. Other tech I'm interesed in
+                            is PWAs and I'll start learning React Native next, to build fully fleshed-out web and mobile applications. 
+
+                        </p>
+
+                        <p>
+                            I'm currently open to do freelance work, and also looking for a position appropriate for someone beginning their 
+                            career in technology. I'm goal-driven and very motivated by the work I do. I have very strong communication skills in
+                            both English and Spanish. 
+                        </p>
+
+                          <p>
+                           If you're interesed or have any questions about my offer, please do not hesitate to contact me via <a href='https://www.linkedin.com/in/guillermo-alfaro/' target='_blank'><strong>Linkedin</strong></a>
+                           or by <a rel="me" href="mailto:galfarotolon@gmail.com" title="mail: galfarotolon@gmail.com"><strong>E-mail</strong></a>. 
+                           You can view my <a href='https://github.com/galfarotolon' target='_blank'><strong>GitHub</strong></a> profile and my 
+                           <a href='https://docs.google.com/document/d/1-R_XISy7JytR3cvx5UzjpyIBqgfrIaYvtu5fM3t1dMg/edit?usp=sharing' target='_blank'><strong>Resume</strong></a> to
+                           see my projects and experience. I hope we can work together!
+                        </p>
+
+                        
+                
+              
+
+                
+                </div>
+
+
+                     <!--     
+                    <div id='Contact' class='section'>
+                        <h2>Contact</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    -->
+            </div>
+
+             <footer>Copyright © Guillermo Alfaro 2021</footer>
         </div>
-    </div>
+
+            
+   <div>
+
    
         
 
@@ -45,8 +357,14 @@
 
 
 
+  <script src="https://kit.fontawesome.com/1f1f46fe01.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
+  <script src='main.js'></script>
 
-    <script src="" async defer>
-    </script>       
+
+
+    
 </body>
+
 </html>

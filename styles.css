@@ -835,11 +835,13 @@ footer{
 }
 
 
-
-@media(max-width:568px){
+@media(max-width:1278px){
     footer{
         
       
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
 }
+
+
+
